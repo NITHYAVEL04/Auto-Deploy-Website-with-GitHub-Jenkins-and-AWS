@@ -11,10 +11,12 @@ pipeline {
         stage('Deploy') {
             steps {
                 sh '''
-                    sudo mkdir -p /var/www/html
-                    sudo cp index.html /var/www/html/index.html
+                     mkdir -p /var/www/html
+                    cp index.html /var/www/html/index.html
                 '''
             }
         }
     }
 }
+
+
